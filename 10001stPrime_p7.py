@@ -21,6 +21,9 @@ import pandas as pd
 #%%%
 
 if __name__ == '__main__':
+# =============================================================================
+#     method 1; using explicit for loop
+# =============================================================================
     lis = []
     i = 0
     limit = 1000000
@@ -32,7 +35,7 @@ if __name__ == '__main__':
             if i==counter: break
     print(lis[-1])
 # =============================================================================
-#     method 2
+#     method 2; using pandas, no explicit loop, internally cython uses loop
 # =============================================================================
     df = pd.Series(np.arange(limit))
     dff = (df[df.apply(lambda x: sp.isprime(x))]).reset_index()
