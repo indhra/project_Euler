@@ -1,2 +1,2 @@
 # project_Euler
-Coding / Finding Mathematical solutions using Python 
+Coding Optimized Mathematical solutions using Python 
